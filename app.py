@@ -1,6 +1,9 @@
-class Database:
-    pk: 1
-    title = "Классы и объекты"
-    author = "Сергей Балакирев"
-    views = 14356
-    comments = 12
+class Goods:
+    title = 'Мороженое'  # Атрибут класса
+    weight = 154         # Атрибут класса
+    tp = 'Еда'           # Атрибут класса   
+    price = 1024         # Атрибут класса   
+
+
+Goods.price = 2048              # Изменение атрибута класса
+Goods.inflation = 100           # Создание нового атрибута inflation
