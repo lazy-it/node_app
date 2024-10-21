@@ -1,9 +1,15 @@
-class Goods:
-    title = 'Мороженое'  # Атрибут класса
-    weight = 154         # Атрибут класса
-    tp = 'Еда'           # Атрибут класса   
-    price = 1024         # Атрибут класса   
+""" Сортировка выбором """
+nums = list(map(int, input().split()))
+
+index = 0 # индекс элемента
+
+for i in range(len(nums)):
+    for j in range(index, len(nums)):
+        if nums[index] > nums[j]:
+            nums[index], nums[j] = nums[j], nums[index]
+    index += 1
 
 
-Goods.price = 2048              # Изменение атрибута класса
-Goods.inflation = 100           # Создание нового атрибута inflation
+print(*nums)
+    
+
